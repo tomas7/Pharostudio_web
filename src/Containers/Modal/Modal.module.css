@@ -1,0 +1,84 @@
+
+
+
+.caseImg, .bodyImg {
+    width: 100%;
+    height: auto;
+}
+
+.caseHeading {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    color: black;
+    padding: 55px 0 20px;
+    font-size: 1.6em;
+}
+
+.pilotText{
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    padding: 20px 0 65px;
+    color: black;
+     font-size: 1.4em;
+}
+
+.bodyText {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    padding: 55px 0 65px;
+    color: black;
+     font-size: 1.4em;
+}
+
+.tripleImg {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tripleImg img {
+    float: left;
+    height: auto;
+    width: 100%;
+}
+
+.endText {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    padding: 60px 0 65px;
+    padding-bottom: 30px;
+    color: black;
+     font-size: 1.4em;
+}
+.CTAWrapper {
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+    padding: 20px 0px 40px 0px;
+}
+
+.CTA {
+    border-top: 3px solid rgba(242,218,196,.7);
+    border-bottom: 3px solid rgba(242,218,196,.7);
+
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px 0;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.CTA > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+

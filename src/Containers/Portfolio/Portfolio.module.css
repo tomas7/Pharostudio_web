@@ -1,0 +1,65 @@
+.portfolioGalWrapper {
+    background-color: #21334d;
+    
+}
+
+.portfolioGalWrapper > img {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+}
+
+.portfolioGalWrapper div div img {
+    -webkit-filter: opacity(70%) saturate(60%);
+    filter: opacity(70%) saturate(60%);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-animation-name: allWork_example;
+    -webkit-animation-duration: 4s;
+    animation-name: allWork_example;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.portfolioGalWrapper div div img:hover {
+    -webkit-filter: opacity(100%) saturate(100%);
+    filter: opacity(100%) saturate(100%);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-animation-name: allWork_example;
+    -webkit-animation-duration: 4s;
+    animation-name: allWork_example;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes allWork_example {
+   0%{
+    background-color: #147866;
+   }
+   50%{
+    background-color: #21334d;
+   }
+   100%{
+    background-color: #147866;
+   }
+
+}
+
+@media only screen and (max-width: 1024px){
+
+.portfolioGalWrapper div div img {
+    -webkit-filter: opacity(100%) saturate(100%);
+    filter: opacity(100%) saturate(100%);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    display: none;
+}
+}

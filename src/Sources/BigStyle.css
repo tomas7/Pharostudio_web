@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap');
+
+:root{
+    --main-color: rgba(0,21,51,.87);
+    --secondary-color: #f2dac4;
+    --main-font: Open Sans,sans-serif;
+    --secondary-font: Lato, sans-serif;;
+}

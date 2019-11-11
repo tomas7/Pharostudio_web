@@ -1,0 +1,121 @@
+.aboutMainImg {
+    width: 100%;
+    height: auto;
+
+}
+
+.profileImgWrapper {
+    width: 100%;
+    position: absolute;
+   
+}
+
+.profileImgWrapper img {
+    width: 400px;
+    position: relative;
+    top: -200px;
+    max-width: 50%;
+
+    margin: 0 auto;
+    display: block;
+}
+
+.bodyText {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    padding: 55px 0 65px;
+    color: black;
+     font-size: 1.4em;
+     margin-top: 230px;
+}
+
+.CTAWrapper {
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+    padding: 20px 0px 40px 0px;
+}
+
+.CTA {
+    border-top: 3px solid rgba(242,218,196,.7);
+    border-bottom: 3px solid rgba(242,218,196,.7);
+
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px 0;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.CTA > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1200px){
+    .profileImgWrapper img {
+        width: 300px;
+        position: relative;
+        top: -150px;
+        max-width: 40%;
+    
+        margin: 0 auto;
+        display: block;
+    }
+
+    .bodyText {
+        text-align: center;
+        margin: 0 auto;
+        width: 60%;
+        padding: 55px 0 25px;
+        color: black;
+         font-size: 1.4em;
+         margin-top: 130px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .bodyText {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        padding: 55px 0 25px;
+        color: black;
+         font-size: 1.4em;
+         margin-top: 100px;
+    }
+
+    .CTAWrapper {
+ 
+        width: 40%;
+   
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .profileImgWrapper img {
+        width: 300px;
+        position: relative;
+        top: -100px;
+        max-width: 40%;
+    
+        margin: 0 auto;
+        display: block;
+    }
+
+    .bodyText {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        padding: 55px 0 25px;
+        color: black;
+         font-size: 1.4em;
+         margin-top: 50px;
+    }
+
+    
+}

@@ -1,0 +1,20 @@
+.contentWrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .contentWrapper {
+        width: 90%;
+        
+    }
+}
+
+
+/* @media only screen and (max-width: 800px){
+    /* .contentWrapper {
+        width: 100%;
+        
+    } */
+/* } */

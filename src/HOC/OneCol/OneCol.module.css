@@ -1,0 +1,82 @@
+@import '../../Sources/BigStyle.css';
+
+
+.titleImg img {
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    background-color: hsla(0,0%,94.5%,.71);
+}
+
+.icon img {
+    width: 100px;
+    height: auto;
+    float: right;
+    margin: -50px -50px 0 0;
+    position: relative;
+    z-index: 9;
+}   
+
+.card {
+    margin-top: -1px;
+    height: auto;
+padding: 40px 10px;
+margin: 0 auto;
+box-shadow: 10px 20px 25px 0 rgba(0,0,0,.2);
+background-color: hsla(0,0%,94.5%,.71);
+}
+
+.card h2, .card li {
+    font-family: var(--main-font)
+}
+
+.card h2 {
+    padding: 0 1em;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.card li {
+    list-style-type: none;
+    font-size: 1.4em;
+    padding: 1rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cardWrapper {
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1500px){
+    .card {
+        max-width: 100%;
+    }
+    .serviceItemWrapper {
+        width: 100%;
+    }
+
+    .icon img {
+        margin: -41px 0px 0 0;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .serviceItemWrapper {
+        width: 80%;
+        grid-row: unset;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+    
+
+    .icon img {
+        margin: -41px 0px 0 0;
+    }
+
+    .cardWrapper {
+        padding: 40px 10px;
+    }
+    
+}

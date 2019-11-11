@@ -1,0 +1,80 @@
+.svg_ {
+    position: absolute;
+    left: -2px;
+    top: -11px;
+    /* display: none; */
+    /* width: 800px!important; */
+    /* height: 800px!important; */
+    
+}
+
+.svg_ rect {
+    fill: white;
+
+  }
+  .svg_ > rect {
+      -webkit-mask: url(#mask);
+      mask: url(#mask);
+      fill: #21334D;
+      
+  }
+  .svg_ text {
+    font-family: Biko, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 38px;}
+
+    /* .inAnim {
+
+      -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+  
+    .outAnim {
+      -webkit-animation: shadow-drop-1-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: shadow-drop-1-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    @-webkit-keyframes shadow-drop-2-center {
+      0% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+        -webkit-transform: translateZ(50px);
+                transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
+    @keyframes shadow-drop-2-center {
+      0% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+        -webkit-transform: translateZ(50px);
+                transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      }
+    } */
+
+    @media only screen and (max-width: 800px){
+      .svg_ {
+        position: absolute;
+        /* width: 100%;
+        height: 100%; */
+        left: 0px;
+        top: -29px;
+        
+    
+        /* display: none; */
+        /* width: 800px!important; */
+        /* height: 800px!important; */
+        
+    }
+  }

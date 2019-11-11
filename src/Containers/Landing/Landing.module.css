@@ -1,0 +1,83 @@
+@import '../../Sources/BigStyle.css';
+
+.landingWrapper {
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url('../../Image/Photos/Photo (56).jpg')
+}
+
+.landingWrapper div {
+    position: relative;
+  
+    top: 20%;
+    width: auto;
+    padding: 35px;
+}
+
+.landingWrapper h1 {
+    color: #fff;
+    margin-left: 120px;
+    font-size: 2.8em!important;
+    margin-bottom: 0;
+    font-family: var(--main-font);
+   
+}
+
+.landingWrapper p {
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    color: #fff;
+    margin-left: 120px;
+    margin-top: 0;
+    font-family:  var(--main-font);
+    width: 50%;
+   
+}
+
+@media only screen and (max-width: 1200px){
+    .landingWrapper div{
+        position: relative;
+        left: 0%;
+        top: 10%;
+        width: 80%;
+        padding: 00px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .landingWrapper h1 {
+        margin-left: 0px;
+               width: 100%;
+    }
+
+    .landingWrapper p {
+        margin-left: 0px;
+               width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 724px){
+    .landingWrapper div{
+        top: 10%;
+    }
+    .landingWrapper h1 {
+        margin-left: 0;
+        font-size: 1.8em!important;
+    margin-top: 20px;
+ 
+ 
+    }
+    .landingWrapper p {
+        margin-left: 0;
+        font-size: 1em!important;
+    margin-top: 20px;
+ 
+ 
+    }
+
+}
+
+

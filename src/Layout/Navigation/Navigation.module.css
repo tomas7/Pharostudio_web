@@ -1,0 +1,158 @@
+@import '../../Sources/BigStyle.css';
+
+.navWrapper {
+    width: 100%;
+    height: 64px;
+    list-style: none;
+    background-color: hsla(0,0%,100%,.63);
+    box-shadow: 0 1px 42px 0 rgba(0,0,0,.35);
+    padding: 0;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+   transition: all 1s ease 0s;
+    font-family: var(--main-font);
+}
+
+.navWrapperActive {
+    width: 100%;
+    height: 88px;
+    list-style: none;
+    background-color: hsla(0,0%,100%,.63);
+    box-shadow: 0 1px 42px 0 rgba(0,0,0,.35);
+    padding: 0;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+   transition: all 1s ease 0s;
+    font-family: var(--main-font);
+}
+.topNav  {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.topNav li {
+    padding: 0px 35px;
+
+    display: inline;
+    font-size: 1em;
+    line-height: 4em;
+}
+
+.topNav a {
+    text-decoration: none;
+    color: var(--main-color);
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+
+.withBorder {
+    border-right: 1px solid;
+    border-color:  var(--main-font);
+}
+
+.topNav a:hover {
+    font-size: 1.4em;
+    transition: all 1s ease 0s;
+}
+.logoLi {
+    padding: 0px 10px;
+    display:"inline-block"
+}
+
+.hamI {
+    position: fixed;
+    right: 0px;
+    width: 30px;
+    height: auto;
+    padding: 20px 22px;
+    fill: var(--main-color);
+    display: none;
+}
+
+.hide {
+    display: inline!important;
+}
+
+.show {
+    display: block;
+}
+
+.iconStatic {
+    width: 25px;
+    height: auto;
+    position: relative;
+    top: 8px;
+    padding: 8px;
+    display: none;
+}
+
+@media only screen and (max-width: 1600px){
+    .topNav a {
+        font-size: 1em;
+    }
+
+    .topNav li {
+        padding: 0px 10px;
+    }
+
+    .logoLi {
+        padding: 0px 10px!important;
+        display:"inline-block"
+    }
+
+    .withBorder {
+        border-right: 0px solid;
+        border-color:  var(--main-font);
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    .topNav li {
+        padding: 0px 10px;
+        display: block;
+        line-height: 2.5em;
+    }
+
+    .navWrapperActive {
+        height: auto;
+    }
+
+    .navWrapper {
+        height: auto;
+    }
+
+    .logoLi {
+        display: none!important;
+    }
+
+    
+    .hamI {
+        display: block;
+    }
+    .iconStatic {
+        width: 25px;
+        height: auto;
+        position: relative;
+        top: 8px;
+        padding: 8px;
+        display: block;
+    }
+
+    .hide {
+        display: none!important;
+    } 
+}
+/* @media only screen and (max-width: 1600px){
+  
+    .topNav li {
+        padding: 0px 20px;
+    }
+
+} */

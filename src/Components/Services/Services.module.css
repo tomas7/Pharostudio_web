@@ -1,0 +1,68 @@
+.servicesContianer  {
+    display: grid;
+    margin: 0 auto;
+    grid-column-gap: 60px;
+    z-index: 0;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 150px;
+}
+
+.textStyle h1 {
+    margin-left: 5%;
+    font-size: 2.2em;
+}
+
+.textStyle p {
+    margin-left: 5%;
+    font-size: 1.2em;
+    width: 40%;
+    padding-bottom: 40px;
+}
+
+.textStyle {
+    margin-bottom: 40px;
+}
+
+.portfolioWrapper {
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.portfolioWrapper h2{
+    font-size: 2em;
+    margin-top: 0px
+}
+
+
+.portfolioWrapper p {
+    font-size: 0.8em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    margin-top: 20px
+}
+
+
+@media only screen and (max-width: 800px){
+    .servicesContianer  {
+    
+        grid-template-columns: unset;
+
+    }
+
+    .textStyle{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .textStyle h1 {
+        margin-left: 0%;
+    }
+    .textStyle p {
+        margin-left: 0%;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+}
