@@ -21,5 +21,15 @@ export let PortfolioImg = {
     img20: require('../../Image/Photos/Portfolio/8_4.5x3.jpg'),
     img21: require('../../Image/Photos/Portfolio/9s.jpg'),
     img22: require('../../Image/Photos/Portfolio/12_4.5x3.jpg'),
+
+    img23: require('../../Image/Photos/Portfolio/23_4x3.jpg'),
+
+    img24: require('../../Image/Photos/Portfolio/24_4x3.jpg'),
+
+    
+    img25: require('../../Image/Photos/Portfolio/26s.jpg'),
+    img26: require('../../Image/Photos/Portfolio/27s.jpg'),
+    img27: require('../../Image/Photos/Portfolio/28_4x3.jpg'),
+
 }
 

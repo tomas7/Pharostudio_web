@@ -18,6 +18,12 @@ function Portfolio(props) {
           title: "Photoshoot, photo, Creative Photoshoot, Corporate, Corporate photoshoot, Photographer"
         },
         {
+          src: porftolioImgs.PortfolioImg.img26,
+          width: 1,
+          height: 1,
+          title: "App design, web design, website design, webdesign, webdeign in Nordjylland, webdesigner Nordjyland, Webdevelopment, Worpress, Wordpress Nordjylland"
+        },
+        {
           src: porftolioImgs.PortfolioImg.img2,
           width: 5,
           height: 3,
@@ -29,6 +35,14 @@ function Portfolio(props) {
           height: 1,
           title: "Photoshoot, photo, Social media, Corporate, Corporate photoshoot, Photographer"
         },
+
+        {
+          src: porftolioImgs.PortfolioImg.img23,
+          width: 4.5,
+          height: 3,
+          title: "web design, website design, webdesign, webdeign in Nordjylland, webdesigner Nordjyland, Webdevelopment, Worpress, Wordpress Nordjylland"
+        },
+
         {
           src: porftolioImgs.PortfolioImg.img4,
           width: 1,
@@ -47,6 +61,7 @@ function Portfolio(props) {
           height: 3,
           title: "Photoshoot, photo, Social media, Corporate, Corporate photoshoot, Photographer, photographer in Aalborg, photographer Nordjylland, fotograf, fotografer nordjylland"
         },
+
         {
           src: porftolioImgs.PortfolioImg.img7,
           width: 4.5,
@@ -71,6 +86,7 @@ function Portfolio(props) {
           height: 3,
           title: "Photoshoot, photo, Social media, Corporate, Corporate photoshoot, Photographer, photographer in Aalborg, photographer Nordjylland, fotograf, fotografer nordjylland"
         },
+        
         {
           src: porftolioImgs.PortfolioImg.img11,
           width: 1,
@@ -82,6 +98,12 @@ function Portfolio(props) {
           width: 4.5,
           height: 3,
           title: "Photoshoot, photo, Social media, Corporate, Corporate photoshoot, Photographer, photographer in Aalborg, photographer Nordjylland, fotograf, fotografer nordjylland"
+        },
+        {
+          src: porftolioImgs.PortfolioImg.img25,
+          width: 1,
+          height: 1,
+          title: "web design, website design, webdesign, webdeign in Nordjylland, webdesigner Nordjyland, Webdevelopment, Worpress, Wordpress Nordjylland"
         },
         {
           src: porftolioImgs.PortfolioImg.img13,
@@ -126,6 +148,12 @@ function Portfolio(props) {
           title: "Photoshoot, photo, Social media, Corporate, Corporate photoshoot, Photographer, photographer in Aalborg, photographer Nordjylland, fotograf, fotografer nordjylland"
         },
         {
+          src: porftolioImgs.PortfolioImg.img27,
+          width: 4.5,
+          height: 3,
+          title: "web design, website design, webdesign, webdeign in Nordjylland, webdesigner Nordjyland, Webdevelopment, Worpress, Wordpress Nordjylland"
+        },
+        {
           src: porftolioImgs.PortfolioImg.img20,
           width: 4.5,
           height: 3,
@@ -136,6 +164,12 @@ function Portfolio(props) {
           width: 1,
           height: 1,
           title: "Photoshoot, photo, Social media, Corporate, Corporate photoshoot, Photographer, photographer in Aalborg, photographer Nordjylland, fotograf, fotografer nordjylland"
+        },
+        {
+          src: porftolioImgs.PortfolioImg.img24,
+          width: 4.5,
+          height: 3,
+          title: "web design, website design, webdesign, webdeign in Nordjylland, webdesigner Nordjyland, Webdevelopment, Worpress, Wordpress Nordjylland"
         },
         {
           src: porftolioImgs.PortfolioImg.img22,
