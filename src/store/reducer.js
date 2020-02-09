@@ -4,11 +4,20 @@ const initialState = {
     isOverW: false,
     isOverG: false,
     isOverV: false,
-    isOverA: false
+    isOverA: false,
+
+    l_active: 'L_EN'
 }
 
 const reducer = (state = initialState, action) => {
+    console.log(action.l_active)
     switch(action.type){
+        case actionTypes.L_CHANGE:
+            return {
+                ...state,
+                l_active: action.l_active
+            };
+     
         case actionTypes.T_W:
             return {
                 ...state,

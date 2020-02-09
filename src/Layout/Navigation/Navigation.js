@@ -9,6 +9,16 @@ import AboutUs from '../../Containers/AboutUs/AboutUs'
 import ModalWrapper from '../../HOC/modalWrapper/modalWrapper';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
+import {connect} from 'react-redux';
+import * as actionTypes from '../../store/actionTypes'
+
+import language from '../../Containers/Language/Language'
+
+import * as L_en from '../../Sources/Languages/EN'
+import * as L_dk from '../../Sources/Languages/DK'
+
+import { useTranslation } from 'react-i18next';
+
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
  
@@ -24,6 +34,8 @@ export class Navigation extends Component {
             popUpContact: false
         }
     }
+
+
     
     targetElement = null;
     scrollPoint = 0.04;  
@@ -108,6 +120,12 @@ export class Navigation extends Component {
 
     render() {
 
+        let cur_language = L_en
+        if (this.props.l_active === "L_EN") {
+            cur_language = L_en
+        }else if (this.props.l_active === "L_DK"){
+            cur_language = L_dk
+        }
         let aboutUs = null
         let logo = 
             <Logo  
@@ -144,7 +162,9 @@ export class Navigation extends Component {
         }
 
         return (
+            
             <>
+            
                 <nav className={this.state.active ? myClass.navWrapperActive: myClass.navWrapper} >
                 <div onClick={() => this.hamHandler()} className={myClass.hamI}>
                     {hamI}
@@ -152,7 +172,7 @@ export class Navigation extends Component {
                 <ContentWrapper>
                     <ul className={myClass.topNav}>
     
-                        <li className={this.state.ham ? myClass.hide : myClass.withBorder}> <Link activeClass="active" to="services" spy={true} smooth={true} offset={-130} duration={1500}>SERVICES</Link></li>      
+                        <li className={this.state.ham ? myClass.hide : myClass.withBorder}> <Link activeClass="active" to="services" spy={true} smooth={true} offset={-130} duration={1500}>{cur_language.englishBundle.navigationText[0]}</Link></li>      
                         <li className={this.state.ham ? myClass.hide : myClass.withBorder}><NavLink to={{pathname:"/portfolio"}}>PORTFOLIO</NavLink></li>
                         <li className={this.state.ham ? myClass.hide : null}><Link activeClass="active" to="ourWork" spy={true} smooth={true} offset={-130} duration={1500}>OUR WORK</Link></li>
                         <li className={this.state.ham ? myClass.show : myClass.logoLi}>
@@ -160,13 +180,21 @@ export class Navigation extends Component {
                                 {logo}
                             </a>                      
                         </li>   
-                        <li className={this.state.ham ? myClass.hide : myClass.withBorder}><Link activeClass="active" to="clients" spy={true} smooth={true} offset={-600} duration={1500}>CLIENTS</Link></li>                
+                        <li className={this.state.ham ? myClass.hide : myClass.withBorder}><Link activeClass="active" to="clients" spy={true} smooth={true} offset={-600} duration={1500}>{this.props.l_active === "L_EN"? "Clients" : "KUNDER"}</Link></li>                
                         <li className={this.state.ham ? myClass.hide : myClass.withBorder}><Link onClick={() => this.toggleState()} activeClass="active" to="#" spy={true} smooth={true} offset={50} duration={1500}>ABOUT US</Link></li>
                         <li className={this.state.ham ? myClass.hide : null}><Link activeClass="active" to="footer" spy={true} smooth={true} offset={50} duration={1500}>CONTACT</Link></li>        
                     </ul>
                 </ContentWrapper>
             </nav>
+         
             {aboutUs}
+        
+            <div style={{position:"absolute", zIndex:"99999"}}>
+                <button  onClick={() => this.props.onLanguageChange("L_EN")}>EN</button>
+                <button  onClick={() => this.props.onLanguageChange("L_DK")}>DK</button>
+                 <button  onClick={() => console.log(cur_language.englishBundle)}>L</button>
+            </div>
+        
             </>
             
         )
@@ -174,16 +202,16 @@ export class Navigation extends Component {
 }
 
 
-export default Navigation;
+const mapStateToProps = state => {
+    return {
+        l_active: state.l_active
+    }
+}
 
-// <li className={this.state.ham ? myClass.hide : myClass.withBorder}><NavLink activeStyle={{fontSize: "1.5em"}}  to="test1" spy={true} smooth={true} exact to={{pathname:"#"}}>SERVICES</NavLink></li>      
-// <li className={this.state.ham ? myClass.hide : myClass.withBorder}><NavLink to={{pathname:"#"}}>PORTFOLIO</NavLink></li>
-// <li className={this.state.ham ? myClass.hide : null}><NavLink to={{pathname:"#"}}>OUR WORK</NavLink></li>
-// <li className={this.state.ham ? myClass.show : myClass.logoLi}>
-//     <a href="#">
-//         {logo}
-//     </a>                      
-// </li>   
-// <li className={this.state.ham ? myClass.hide : myClass.withBorder}><NavLink to={{pathname:"#"}}>CLIENTS</NavLink></li>                
-// <li className={this.state.ham ? myClass.hide : myClass.withBorder}><NavLink to={{pathname:"#"}}>ABOUT US</NavLink></li>
-// <li className={this.state.ham ? myClass.hide : null}><NavLink to={{pathname:"#"}}>CONTACT</NavLink></li>        
+const mapDispatcheToProps = dispatch => {
+    return {
+        onLanguageChange: (language) => dispatch(actionTypes.l_change(language))
+    }
+}
+export default  connect(mapStateToProps, mapDispatcheToProps)(Navigation);
+

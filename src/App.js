@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import './App.css';
 import Layout from './Layout/Layout'
 
@@ -6,15 +6,15 @@ import Layout from './Layout/Layout'
 function App() {
 
   return (
-    
+  
       <div className="App">
 
           <Layout/>
 
       </div>
- 
+
     
   );
 }
 
-export default App;
+export default (App);

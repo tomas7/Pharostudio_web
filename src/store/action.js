@@ -6,3 +6,8 @@ export const T_V = 'T_V'
 export const F_V = 'F_V'
 export const T_A = 'T_A'
 export const F_A = 'F_A'
+
+export const L_EN = 'L_EN'
+export const L_DK = 'L_DK'
+
+export const L_CHANGE = 'L_CHANGE'
