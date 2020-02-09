@@ -180,7 +180,7 @@ export class Navigation extends Component {
                                 {logo}
                             </a>                      
                         </li>   
-                        <li className={this.state.ham ? myClass.hide : myClass.withBorder}><Link activeClass="active" to="clients" spy={true} smooth={true} offset={-600} duration={1500}>{this.props.l_active === "L_EN"? "Clients" : "KUNDER"}</Link></li>                
+                        <li className={this.state.ham ? myClass.hide : myClass.withBorder}><Link activeClass="active" to="clients" spy={true} smooth={true} offset={-600} duration={1500}>CLIENTS</Link></li>                
                         <li className={this.state.ham ? myClass.hide : myClass.withBorder}><Link onClick={() => this.toggleState()} activeClass="active" to="#" spy={true} smooth={true} offset={50} duration={1500}>ABOUT US</Link></li>
                         <li className={this.state.ham ? myClass.hide : null}><Link activeClass="active" to="footer" spy={true} smooth={true} offset={50} duration={1500}>CONTACT</Link></li>        
                     </ul>
@@ -189,12 +189,12 @@ export class Navigation extends Component {
          
             {aboutUs}
         
-            <div style={{position:"absolute", zIndex:"99999"}}>
+            {/* <div style={{position:"absolute", zIndex:"99999"}}>
                 <button  onClick={() => this.props.onLanguageChange("L_EN")}>EN</button>
                 <button  onClick={() => this.props.onLanguageChange("L_DK")}>DK</button>
                  <button  onClick={() => console.log(cur_language.englishBundle)}>L</button>
             </div>
-        
+         */}
             </>
             
         )

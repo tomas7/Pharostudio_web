@@ -13,6 +13,7 @@ function Layout(props) {
         <>
             <Route history={HashRouter} path="/" exact={true} component={WebsiteContent}/>
             <Route history={HashRouter} path="/Portfolio" exact={true} component={Portfolio}/>
+            
         </>
     )
 }

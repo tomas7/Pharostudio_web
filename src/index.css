@@ -71,7 +71,18 @@ width: 75%;
     margin-bottom: 40px;
     color: #000;
     font-size: 3em;
+  }
 
+  
+  .sectionHeadingCenter {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 76px;
+    margin-bottom: 40px;
+    color: #000;
+    font-size: 3em;
+    display: block;
+    text-align: center;
   }
   .inWrapper{
     width: 80%;
@@ -93,6 +104,71 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
+}
+
+/* Form - change to module css */
+form {
+  width: 500px;
+  background: white;
+  padding: 20px 25px;
+
+  margin-top: 30px;
+margin: 0 auto;
+}
+form input,
+form textarea {
+  font: inherit;
+  padding: 5px 5px;
+  width: 100%;
+  height: 100%;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border:0.05em solid var(--main-color);
+  font-family:var(--main-font);
+}
+form button {
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 8px 35px;
+  font-size: 12px;
+  background: #888;
+  color: white;
+}
+form label {
+  color: var(--main-color);
+  font-size: 1.4em;
+  margin-bottom: 2px;
+  display: block;
+  font-family:var(--main-font);
+}
+.contactForm_button {
+
+    padding:0.5em 2.5em;
+    border:0.16em solid var(--main-color);
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+
+    font-family:var(--main-font);
+    font-weight:400;
+    color:var(--main-color);
+    text-align:center;
+    transition: all 1s;
+    width: 40%;
+    display: block;
+
+    margin: 20px auto;
+    cursor: pointer;
+}
+.msg {
+  color: rgb(120, 177, 120);
+  margin: 0 auto;
+}
+
+.recaptcha{
+  margin: 0 auto;
+  display: block;
+  width: 200px;
 }
 
   @keyframes beat {

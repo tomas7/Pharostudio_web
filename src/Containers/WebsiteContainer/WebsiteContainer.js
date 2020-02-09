@@ -9,6 +9,8 @@ import ModalWrapper from '../../HOC/modalWrapper/modalWrapper'
 import PopUp from '../../Containers/PopUp/PopUp'
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
+import Email from '../../Containers/Email/Email'
+
 function WebsiteContainer(props) {
     //set to false to enable 
     let [isPopUp, setIsPopUp] = useState()
@@ -79,6 +81,7 @@ function WebsiteContainer(props) {
             <Services history={props.history}/>
             <OurWork/>
             <Clients/>
+            <Email/>
             <Footer/>
         </>
     )
