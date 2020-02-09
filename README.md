@@ -12,11 +12,13 @@ Website, which I made for my personal freelance business in web, design and othe
 
 ### Advantages of CVGs and paths
 
+### NEW: Email with reCaptcha
+
 ## TO DOs:
 
 ### Optimization and unnecessary re-renders fix
 
-### Danish version
+### Danish version 
 
 ### CSS to Sass
 
