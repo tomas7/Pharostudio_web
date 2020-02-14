@@ -2,10 +2,10 @@
 
 .landingWrapper {
     height: 800px;
-    width: 100%;
+    width: auto;
     background-size: cover;
     overflow: hidden;
-    background-image: url('../../Image/Photos/Photo (56).jpg')
+    background-image: url('../../Image/Photos/Title_1WB.jpg')
 }
 
 .landingWrapper div {

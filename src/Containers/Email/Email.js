@@ -36,14 +36,14 @@ export default function ContactUs() {
         {/* <input type="hidden" name="to_name" /> */}
         <div className="contact_col1">
             <label>Name</label>
-            <input type="text" name="to_name" />
+            <input type="text" name="to_name" placeholder="Henry" />
             <label>Email</label>
-            <input  type="email" name="from_name" />
+            <input  type="email" name="from_name" placeholder="henry@awesomecompany.com"/>
         
         </div>
         <div className="contact_col1">
             <label>Message</label>
-            <textarea name="message_html" />
+            <textarea name="message_html" placeholder="Let's create something great"/>
             <input className="contactForm_button" type="submit" value="Send" />
             <p className="msg">{message}</p>
             <div className="recaptcha">
